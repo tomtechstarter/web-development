@@ -40,4 +40,8 @@ body {
   input[type="submit"]:hover {
     background-color: #2072b3;
   }
+
+  button {
+    cursor: pointer;
+  }
   
