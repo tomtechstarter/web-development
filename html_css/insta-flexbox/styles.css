@@ -1,0 +1,21 @@
+/* Tipp: STRG+# zum Auskommentieren*/
+
+.home{
+  /* background-color: red; */
+}
+.anmelden{
+  /* background-color: blue; */
+  padding-right: 20px;
+}
+.registrieren{
+  /* background-color: aquamarine; */
+}
+.doppelfrosch{
+  flex-direction: column;
+}
+
+#navbar{
+  display: flex;
+  justify-content: space-between;
+  /* background-color: black; */
+}
