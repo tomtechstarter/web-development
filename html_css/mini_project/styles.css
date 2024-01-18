@@ -1,0 +1,68 @@
+ body {
+     background-color: black;
+
+ }
+
+ .maincontainer {
+     background-color: pink;
+     width: 100vw;
+    min-height: 100px;
+     overflow: hidden;
+     .myimage{
+        height: 500px;
+        aspect-ratio: 1;
+        object-fit:cover;
+        background-color: yellow;
+     }
+ }
+
+ h1 {
+     font-size: 20px;
+ }
+
+ h2 {
+     font-size: 18px;
+ }
+
+ h3 {
+     font-size: 16px;
+ }
+
+ footer {
+     background-color: blue;
+     width: 100vw;
+     height: 100px;
+
+ }
+
+ .navbar {
+     width: 100vw;
+     background-color: red;
+     height: 60px;
+     margin-top: -8px;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     
+     .leftnavbar{
+        height:60px;
+        background-color: aquamarine;
+        min-width: 100px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+     }
+     .centernavbar{
+        height:100%;
+        background-color:brown;
+        min-width: 100px;
+     }
+     .rightnavbar{
+        height:60px;
+        background-color:blanchedalmond;
+        min-width: 100px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+     }
+ }
