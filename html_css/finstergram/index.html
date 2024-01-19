@@ -1,20 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finstergram</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <nav id="navbar">
-        <a class="home" href="http://127.0.0.1:5500/html_css/finstergram/index.html"> 
-            <img class="logo" src="./svg/Finstergram.svg">
-        </a>
-        <div class="nav-buttons">
-            <a class="anmelden" href="http://127.0.0.1:5500/html_css/finstergram/index.html"> anmelden </a>
-            <a class="registrieren" href="http://127.0.0.1:5500/html_css/finstergram/index.html"> registrieren </a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Finstergram</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav id="navbar">
+            <a class="home" href="http://127.0.0.1:5500/html_css/finstergram/index.html"> 
+                <img class="logo" src="./svg/Finstergram.svg">
+            </a>
+            <div class="nav-buttons">
+                <a class="anmelden" href="http://127.0.0.1:5500/html_css/finstergram/index.html"> anmelden </a>
+                <a class="registrieren" href="http://127.0.0.1:5500/html_css/finstergram/index.html"> registrieren </a>
+            </div>
+        </nav>
+        <!-- Profil -->
+        <div class="flexbox">
+            <div class="profil">
+                <div class="profil-bild">
+                    <img class="profil-bild-img" src="./jfif/cat0.jfif">
+                </div>
+                <div class="profil-kram">
+                    <div class="profil-info">
+                        <label> Catstarter</label>
+                        <button> Folgen </button>
+                        <button> Nachricht Senden </button>
+                        <button> ... </button>
+                    </div>
+                    <div class="profil-stats">
+                        <label class="stat"> 3 Beiträge </label>
+                        <label class="stat"> 3 Follower </label>
+                        <label class="stat"> 20 gefolgt </label>
+                    </div>
+                    <div class="profil-bio">
+                        <h5>Hallo Welt!</h5>
+                        <h5>Hallo Welt!</h5>
+                        <h5>Hallo Welt!</h5>
+                        <h5>Hallo Welt!</h5>
+                        <h5>Hallo Welt!</h5>
+                    </div>
+                </div>
+            </div>
         </div>
-    </nav>
-</body>
+        <!-- Gallery -->
+        <div class="gallery">
+            <div class="column">
+                <img class="gallery-img" src="./jfif/cat0.jfif">
+                <img class="gallery-img" src="./jfif/cat1.jfif">
+                <img class="gallery-img" src="./jfif/cat2.jfif">
+                <img class="gallery-img" src="./jfif/cat0.jfif">
+                <img class="gallery-img" src="./jfif/cat1.jfif">
+            </div>
+            <div class="column">
+                <img class="gallery-img" src="./jfif/cat1.jfif">
+                <img class="gallery-img" src="./jfif/cat2.jfif">
+                <img class="gallery-img" src="./jfif/cat0.jfif">
+                <img class="gallery-img" src="./jfif/cat1.jfif">
+                <img class="gallery-img" src="./jfif/cat2.jfif">
+            </div>
+            <div class="column">
+                <img class="gallery-img" src="./jfif/cat2.jfif">
+                <img class="gallery-img" src="./jfif/cat0.jfif">
+                <img class="gallery-img" src="./jfif/cat1.jfif">
+                <img class="gallery-img" src="./jfif/cat2.jfif">
+                <img class="gallery-img" src="./jfif/cat0.jfif">
+            </div>
+        </div>
+    </body>
 </html>

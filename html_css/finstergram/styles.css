@@ -54,3 +54,68 @@ body{
     position: sticky;
     border-bottom: medium dashed #ff0000;
 }
+
+.profil {
+    display:flex;
+    justify-content: space-around;
+    min-width: 500px;
+    height: 100%;
+    margin-top: 20px;
+    /* background-color: yellow; */
+}
+
+.profil-kram{
+    /* background-color: purple; */
+    width: 100%;
+}
+
+.profil-bild {
+    /* background-color: blue; */
+    padding: 40px;
+    /* margin-top: 50px;  */
+}
+
+.profil-bild-img {
+    height: 150px;
+    width: 150px;
+}
+
+.profil-info {
+    /* background-color: red; */
+}
+
+.profil-stats {
+    margin-top: 15px;
+    /* background-color: aquamarine; */
+}
+
+.profil-bio {
+    /* background-color: green; */
+}
+
+.flexbox{
+    display:flex;
+    justify-content: center;
+}
+
+.stat{
+    margin-right: 10px;
+}
+
+.gallery{
+    background-color: #ff0000;
+    display:flex;
+    justify-content: center;
+}
+
+.column{
+    margin-top: 2px;
+    display:flex;
+    flex-direction: column;
+}
+
+.gallery-img{
+    width: 300px;
+    height: 300px;
+    margin: 2px;
+}
