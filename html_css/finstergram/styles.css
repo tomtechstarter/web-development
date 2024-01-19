@@ -1,0 +1,56 @@
+/* Tipp: STRG+# zum Auskommentieren*/
+body{
+    margin: 0px;
+}
+
+.home {
+    /* background-color: red; */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.logo{
+    height: 2em;
+}
+
+.anmelden {
+    /* background-color: blue; */
+    padding: 10px;
+    margin: 10px;
+    background-color: #8f0909;
+    text-decoration: none;
+    font-weight: bold;
+    color:rgb(0, 0, 0)
+}
+
+.registrieren {
+    /* background-color: aquamarine; */
+    padding: 10px;
+    margin: 10px;
+    background-color: #74646420;
+    text-decoration: none;
+    font-weight: bold;
+    color:rgb(255, 0, 0)
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;  
+}
+
+.post{
+    height:200px;
+    width:200px;
+}
+
+#navbar {
+    top : 0;
+    /* font-size: 1.25em; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #474747;
+    position: sticky;
+    border-bottom: medium dashed #ff0000;
+}
