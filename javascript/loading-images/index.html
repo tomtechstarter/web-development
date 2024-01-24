@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>JSON Image Grid</title>
+</head>
+<body>
+  <div id="loading">Loading...</div>
+  <div id="imageGrid"></div>
+
+  <script>
+    var jsonData = {
+      images: [
+        'https://www.mainz.de/freizeit-und-sport/sportpreis-2023.php.media/278798/AdobeStock_JJAVA-4437974.jpeg.scaled/856e0b48f5c9a3bb0c545993575e013a.jpg',
+        'https://www.mainz.de/freizeit-und-sport/sportpreis-2023.php.media/278798/AdobeStock_JJAVA-4437974.jpeg.scaled/856e0b48f5c9a3bb0c545993575e013a.jpg',
+        'https://www.mainz.de/freizeit-und-sport/sportpreis-2023.php.media/278798/AdobeStock_JJAVA-4437974.jpeg.scaled/856e0b48f5c9a3bb0c545993575e013a.jpg',
+        'https://www.mainz.de/freizeit-und-sport/sportpreis-2023.php.media/278798/AdobeStock_JJAVA-4437974.jpeg.scaled/856e0b48f5c9a3bb0c545993575e013a.jpg',
+        'https://www.mainz.de/freizeit-und-sport/sportpreis-2023.php.media/278798/AdobeStock_JJAVA-4437974.jpeg.scaled/856e0b48f5c9a3bb0c545993575e013a.jpg',
+        'https://www.mainz.de/freizeit-und-sport/sportpreis-2023.php.media/278798/AdobeStock_JJAVA-4437974.jpeg.scaled/856e0b48f5c9a3bb0c545993575e013a.jpg',
+        'https://www.mainz.de/freizeit-und-sport/sportpreis-2023.php.media/278798/AdobeStock_JJAVA-4437974.jpeg.scaled/856e0b48f5c9a3bb0c545993575e013a.jpg',
+        'https://www.mainz.de/freizeit-und-sport/sportpreis-2023.php.media/278798/AdobeStock_JJAVA-4437974.jpeg.scaled/856e0b48f5c9a3bb0c545993575e013a.jpg',
+        'https://www.mainz.de/freizeit-und-sport/sportpreis-2023.php.media/278798/AdobeStock_JJAVA-4437974.jpeg.scaled/856e0b48f5c9a3bb0c545993575e013a.jpg',
+        'https://www.mainz.de/freizeit-und-sport/sportpreis-2023.php.media/278798/AdobeStock_JJAVA-4437974.jpeg.scaled/856e0b48f5c9a3bb0c545993575e013a.jpg',
+        'https://www.mainz.de/freizeit-und-sport/sportpreis-2023.php.media/278798/AdobeStock_JJAVA-4437974.jpeg.scaled/856e0b48f5c9a3bb0c545993575e013a.jpg',
+        'https://www.mainz.de/freizeit-und-sport/sportpreis-2023.php.media/278798/AdobeStock_JJAVA-4437974.jpeg.scaled/856e0b48f5c9a3bb0c545993575e013a.jpg',
+
+      ]
+    };
+
+    function simulateDatabaseQuery(callback) {
+      // Simuliere eine Datenbankabfrage mit einem Timeout von 2 Sekunden
+      setTimeout(callback, 2000);
+    }
+
+    function loadImages() {
+      var loadingDiv = document.getElementById('loading');
+      var imageGrid = document.getElementById('imageGrid');
+
+      // Zeige den Ladebildschirm an
+      loadingDiv.style.display = 'block';
+
+      // Simuliere die Datenbankabfrage
+      simulateDatabaseQuery(function () {
+        // Verstecke den Ladebildschirm nach der Datenbankabfrage
+        loadingDiv.style.display = 'none';
+
+        // Iteriere durch die Bild-URLs im JSON-Objekt
+        jsonData.images.forEach(function (imageUrl) {
+          var imageContainer = document.createElement('div');
+          imageContainer.className = 'image-container';
+
+          var imageElement = document.createElement('img');
+          imageElement.src = imageUrl;
+
+          imageContainer.appendChild(imageElement);
+          imageGrid.appendChild(imageContainer);
+        });
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', loadImages);
+
+
+  </script>
+</body>
+</html>
+
+
+

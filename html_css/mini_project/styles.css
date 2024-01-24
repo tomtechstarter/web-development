@@ -30,11 +30,13 @@
 
  footer {
      background-color: blue;
-     width: 100vw;
+     width: 200vw;
      height: 100px;
 
  }
-
+ .navbar:hover {
+    background-color: green;
+ }
  .navbar {
      width: 100vw;
      background-color: red;
@@ -66,3 +68,28 @@
         right: 0px;
      }
  }
+/* 
+ @media screen and (max-width: 600px) {
+    .navbar {
+        height: 180px;
+       
+        display: flex;
+        flex-direction: column;
+        
+        .leftnavbar{
+           position:relative;
+    
+        }
+        .centernavbar{
+            height:60px;
+        }
+        .rightnavbar{
+           
+          
+           position: relative;
+          
+        }
+    }
+  } */
+
+  

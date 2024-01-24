@@ -30,10 +30,27 @@ body {
     bottom: 0;
     width: 100%;
   }
+
+  button {
+    background-color: var(--secondary-color);
+  }
   
   @media screen and (max-width: 600px) {
     .main-content {
       padding: 10px;
+      background-color: blue;
+    }
+
+    h1{
+      font-size: 16px;
+      background-color: green;
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    .main-content {
+      padding: 10px;
+      background-color: purple;
     }
   }
   

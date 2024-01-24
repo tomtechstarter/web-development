@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript DOM Beispiel</title>
+
+</head>
+<body>
+
+  <h1 id="greeting">Willkommen!</h1>
+  <button onclick="changeGreeting()">Ändere Gruß</button>
+
+  <script>
+    function changeGreeting() {
+      const myHeader =  document.getElementById("greeting")
+      myHeader.innerText = "Hallo, JavaScript!";
+    }
+  </script>
+
+</body>
+</html>

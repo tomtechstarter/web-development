@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <title>Formular-Beispiel</title>
+  <script>
+    function onSubmitForm() {
+      alert("HEllo from submit")
+    }
+  </script>
 </head>
 <body>
 
@@ -14,7 +19,7 @@
     </div>
     <button>Hallo</button> 
     <h1>Kontaktformular</h1>
-    <form  method="post">
+    <form onsubmit="onSubmitForm()"  method="post">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
 
@@ -27,10 +32,11 @@
       <label for="message">Nachricht:</label>
       <textarea id="message" name="message" rows="4" required></textarea>
 
-      <input type="submit" value="Absenden">
+      <input type="submit" value="Submit">
       <input type="checkbox">
     </form>
   </div>
+
 
 </body>
 </html>
