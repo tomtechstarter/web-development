@@ -1,1 +1,28 @@
-node_modules
+# Kommentare beginnen mit einem Hash (#)
+
+# Ignoriere alle Dateien im Verzeichnis "node_modules"
+node_modules/
+
+# Ignoriere Dateien mit der Erweiterung ".log"
+*.log
+
+# Ignoriere das Verzeichnis "build" und alle darin enthaltenen Dateien
+build/
+
+# Ignoriere alle .DS_Store-Dateien (macOS spezifisch)
+.DS_Store
+
+# Ignoriere alle Dateien, die mit einem Unterstrich (_) beginnen
+_*.*
+
+# Ignoriere alle .env-Dateien (enthält oft sensible Informationen)
+.env
+
+# Ignoriere das Verzeichnis "dist" und alle darin enthaltenen Dateien
+dist/
+
+# Ignoriere die Datei "config.js"
+config.js
+
+# Ignoriere das Verzeichnis "coverage" und alle darin enthaltenen Dateien
+coverage/
