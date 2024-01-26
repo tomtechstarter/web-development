@@ -1,0 +1,20 @@
+body {
+    display : flex;
+    justify-content: space-around;
+}
+
+img {
+    max-width: 10vw;
+    padding: 5px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+/* Bilder senkrecht nach unten anordnen */
+.imgs-div{
+    display: flex;
+    flex-direction: column;
+}
