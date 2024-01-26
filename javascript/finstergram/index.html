@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Finstergram</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav id="navbar">
+            <a class="home" href="http://127.0.0.1:5500/html_css/finstergram/index.html"> 
+                <img class="logo" src="./svg/Finstergram.svg">
+            </a>
+            <div class="nav-buttons">
+                <a class="anmelden" href="http://127.0.0.1:5500/html_css/finstergram/index.html"> anmelden </a>
+                <a class="registrieren" href="http://127.0.0.1:5500/html_css/finstergram/index.html"> registrieren </a>
+            </div>
+        </nav>
+        <!-- Profil -->
+        <div class="flexbox">
+            <div class="profil">
+                <div class="profil-bild">
+                    <img class="profil-bild-img" src="./jfif/cat0.jfif">
+                </div>
+                <div class="profil-kram">
+                    <div class="profil-info">
+                        <label> Catstarter</label>
+                        <button> Folgen </button>
+                        <button> Nachricht Senden </button>
+                        <button> ... </button>
+                    </div>
+                    <div class="profil-stats">
+                        <label class="stat"> 3 Beiträge </label>
+                        <label class="stat"> 3 Follower </label>
+                        <label class="stat"> 20 gefolgt </label>
+                    </div>
+                    <div class="profil-bio">
+                        <h5>Hallo Welt!</h5>
+                        <h5>Hallo Welt!</h5>
+                        <h5>Hallo Welt!</h5>
+                        <h5>Hallo Welt!</h5>
+                        <h5>Hallo Welt!</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Gallery -->
+        <div class="gallery">
+            <div id="loading">Loading...</div>
+            <div id="image-grid"></div>
+            <!-- <div class="column">
+                <img class="gallery-img" src="./jfif/cat0.jfif">
+                <img class="gallery-img" src="./jfif/cat1.jfif">
+                <img class="gallery-img" src="./jfif/cat2.jfif">
+                <img class="gallery-img" src="./jfif/cat0.jfif">
+                <img class="gallery-img" src="./jfif/cat1.jfif">
+            </div>
+            <div class="column">
+                <img class="gallery-img" src="./jfif/cat1.jfif">
+                <img class="gallery-img" src="./jfif/cat2.jfif">
+                <img class="gallery-img" src="./jfif/cat0.jfif">
+                <img class="gallery-img" src="./jfif/cat1.jfif">
+                <img class="gallery-img" src="./jfif/cat2.jfif">
+            </div>
+            <div class="column">
+                <img class="gallery-img" src="./jfif/cat2.jfif">
+                <img class="gallery-img" src="./jfif/cat0.jfif">
+                <img class="gallery-img" src="./jfif/cat1.jfif">
+                <img class="gallery-img" src="./jfif/cat2.jfif">
+                <img class="gallery-img" src="./jfif/cat0.jfif">
+            </div> -->
+        </div>
+        <script>
+            //Beispiel Code von Tom fast 1:1!
+            //Variables: var, let, const
+            var jsonData = {
+              images: [
+                'https://www.mainz.de/freizeit-und-sport/sportpreis-2023.php.media/278798/AdobeStock_JJAVA-4437974.jpeg.scaled/856e0b48f5c9a3bb0c545993575e013a.jpg',
+                'https://www.mainz.de/freizeit-und-sport/sportpreis-2023.php.media/278798/AdobeStock_JJAVA-4437974.jpeg.scaled/856e0b48f5c9a3bb0c545993575e013a.jpg',
+                'https://www.mainz.de/freizeit-und-sport/sportpreis-2023.php.media/278798/AdobeStock_JJAVA-4437974.jpeg.scaled/856e0b48f5c9a3bb0c545993575e013a.jpg',
+                'https://www.mainz.de/freizeit-und-sport/sportpreis-2023.php.media/278798/AdobeStock_JJAVA-4437974.jpeg.scaled/856e0b48f5c9a3bb0c545993575e013a.jpg',
+                'https://www.mainz.de/freizeit-und-sport/sportpreis-2023.php.media/278798/AdobeStock_JJAVA-4437974.jpeg.scaled/856e0b48f5c9a3bb0c545993575e013a.jpg',
+                'https://www.mainz.de/freizeit-und-sport/sportpreis-2023.php.media/278798/AdobeStock_JJAVA-4437974.jpeg.scaled/856e0b48f5c9a3bb0c545993575e013a.jpg',
+                'https://www.mainz.de/freizeit-und-sport/sportpreis-2023.php.media/278798/AdobeStock_JJAVA-4437974.jpeg.scaled/856e0b48f5c9a3bb0c545993575e013a.jpg',
+                'https://www.mainz.de/freizeit-und-sport/sportpreis-2023.php.media/278798/AdobeStock_JJAVA-4437974.jpeg.scaled/856e0b48f5c9a3bb0c545993575e013a.jpg',
+                'https://www.mainz.de/freizeit-und-sport/sportpreis-2023.php.media/278798/AdobeStock_JJAVA-4437974.jpeg.scaled/856e0b48f5c9a3bb0c545993575e013a.jpg',
+                'https://www.mainz.de/freizeit-und-sport/sportpreis-2023.php.media/278798/AdobeStock_JJAVA-4437974.jpeg.scaled/856e0b48f5c9a3bb0c545993575e013a.jpg',
+                'https://www.mainz.de/freizeit-und-sport/sportpreis-2023.php.media/278798/AdobeStock_JJAVA-4437974.jpeg.scaled/856e0b48f5c9a3bb0c545993575e013a.jpg',
+                'https://www.mainz.de/freizeit-und-sport/sportpreis-2023.php.media/278798/AdobeStock_JJAVA-4437974.jpeg.scaled/856e0b48f5c9a3bb0c545993575e013a.jpg'
+              ]
+            };
+        
+            function simulateDatabaseQueryQuatsch(callback) {          
+              // Simuliere eine Datenbankabfrage mit einem Timeout von 2 Sekunden
+              setTimeout(callback, 2000); //Build-In-Function: setTimeout
+            }
+        
+            function loadImages() {     
+              // <div id="loading">Loading...</div>
+              var loadingDiv = document.getElementById('loading');
+              // <div id="imageGrid"></div>
+              var imageGrid = document.getElementById('image-grid');
+        
+              // Zeige den Ladebildschirm an
+              loadingDiv.style.display = 'block';
+        
+              // Simuliere die Datenbankabfrage (2 Sekunden)
+              simulateDatabaseQueryQuatsch(function () {
+                // Verstecke den Ladebildschirm nach der Datenbankabfrage
+                loadingDiv.style.display = 'none';
+        
+                // Iteriere durch die Bild-URLs im JSON-Objekt
+                // mit Anonymer Funktion
+        
+                jsonData.images.forEach(
+                  (imageUrl) => {
+                    //<div class="image-container"></div>
+                    var imageContainer = document.createElement('div'); 
+                    imageContainer.className = "image-container";
+        
+                    //<img src="salat.jpg" class="gallery-img"></img>
+                    var imageElement = document.createElement('img'); 
+                    imageElement.src = imageUrl;
+                    imageElement.className = "gallery-img";
+        
+                    //image in imageContainer einsetzen
+                    imageContainer.appendChild(imageElement);
+                    
+                    //imageContainer in imageGrid einsetzen
+                    imageGrid.appendChild(imageContainer);
+                  }
+                );
+              });
+              
+            }
+
+            // Wenn die HTML-Seite mit allen Skripts geladen wurde:
+            // führe loadImages aus.
+            document.addEventListener('DOMContentLoaded', loadImages);
+          </script>
+    </body>
+</html>

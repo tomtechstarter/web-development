@@ -1,0 +1,140 @@
+/* Tipp: STRG+# zum Auskommentieren*/
+body{
+    margin: 0px;
+}
+
+.home {
+    /* background-color: red; */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.logo{
+    height: 2em;
+}
+
+.anmelden {
+    /* background-color: blue; */
+    padding: 10px;
+    margin: 10px;
+    background-color: #8f0909;
+    text-decoration: none;
+    font-weight: bold;
+    color:rgb(0, 0, 0)
+}
+
+.registrieren {
+    /* background-color: aquamarine; */
+    padding: 10px;
+    margin: 10px;
+    background-color: #74646420;
+    text-decoration: none;
+    font-weight: bold;
+    color:rgb(255, 0, 0)
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;  
+}
+
+.post{
+    height:200px;
+    width:200px;
+}
+
+#navbar {
+    top : 0;
+    /* font-size: 1.25em; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #474747;
+    position: sticky;
+    border-bottom: medium dashed #ff0000;
+}
+
+.profil {
+    display:flex;
+    justify-content: space-around;
+    min-width: 500px;
+    height: 100%;
+    margin-top: 20px;
+    /* background-color: yellow; */
+}
+
+.profil-kram{
+    /* background-color: purple; */
+    width: 100%;
+}
+
+.profil-bild {
+    /* background-color: blue; */
+    padding: 40px;
+    /* margin-top: 50px;  */
+}
+
+.profil-bild-img {
+    height: 150px;
+    width: 150px;
+}
+
+.profil-info {
+    /* background-color: red; */
+}
+
+.profil-stats {
+    margin-top: 15px;
+    /* background-color: aquamarine; */
+}
+
+.profil-bio {
+    /* background-color: green; */
+}
+
+.flexbox{
+    display:flex;
+    justify-content: center;
+}
+
+.stat{
+    margin-right: 10px;
+}
+
+.gallery{
+    background-color: #ff0000;
+    /* display:flex; */
+    justify-content: center;
+}
+
+.column{
+    margin-top: 2px;
+    display:flex;
+    flex-direction: column;
+}
+
+.gallery-img{
+    width: 300px;
+    height: 300px;
+    margin: 2px;
+    object-fit: contain;
+}
+
+#loading{
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
+
+#image-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2px;
+}
+
+@media screen and (min-width: 650px) {
+    #image-grid {
+      max-width: 1000px;
+    }
+}
